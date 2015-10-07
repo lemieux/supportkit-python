@@ -5,16 +5,21 @@ except ImportError:
     from distutils.core import setup
 
 config = {
-    'description': 'My Project',
-    'author': 'My Name',
-    'url': 'URL to get it at.',
-    'download_url': 'Where to download it.',
-    'author_email': 'My email.',
+    'description': 'SupportKit Python SDK',
+    'author': 'Marc-Antoine Lemieux',
+    'url': 'https://github.com/lemieux/supportkit-python',
+    'download_url': 'https://github.com/lemieux/supportkit-python',
+    'author_email': 'marc@marcantoinelemieux.com',
     'version': '0.1',
-    'install_requires': ['nose'],
+    'install_requires': [
+        'nose',
+        'PyJWT',
+        'cryptography',
+        'requests'
+    ],
     'packages': ['supportkit'],
     'scripts': [],
-    'name': 'projectname'
+    'name': 'supportkit'
 }
 
 setup(**config)
